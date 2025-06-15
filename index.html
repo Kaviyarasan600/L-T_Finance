@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L&T Finances</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/logo.jpg" alt="L&T Finance Logo" class="logo" />
+        <div class="customer-info">
+            <p><strong>Name:</strong> Kaviyarasan</p>
+            <p><strong>Contact:</strong> 8667746044</p>
+            <p><strong>Email:</strong> Kaviyarasan600@gmail.com</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="loan-card">
+            <div class="loan-header">
+                <img src="./img/img.jpg" alt="Two Wheeler Icon" class="loan-icon" />
+                <p><strong>LAN ID:</strong> T07013090424024919</p>
+
+                <div class="fine-icon-wrapper">
+                    <img src="./img/fine.png" alt="Fine Icon" class="fine-icon" />
+                    <span class="tooltip">Late Payment Finality Amount: After 5th ₹500 & After 20th ₹850</span>
+                </div>
+            </div>
+
+            <div class="loan-details">
+                <p><strong>Loan Amount:</strong> ₹ 1,06,416</p>
+                <p><strong>EMI Amount:</strong> ₹ 5,276</p>
+                <p><strong>Next EMI Date:</strong> 3 Jul 2025</p>
+                <p><strong>Pending Tenure:</strong> 16 Months</p>
+                <p><strong>Annualized Interest Rate:</strong> 9.49%</p>
+                <p><strong>Disbursed Date:</strong> 11 Apr 2024</p>
+                <p><strong>Last Paid Amount:</strong> ₹ 6,126</p>
+                <p><strong>Loan Status:</strong> Active</p>
+                <p><strong>First Installment Date:</strong> 3 Jun 2024</p>
+                <p><strong>Repayment Mode:</strong> NACH</p>
+                <p class="highlight"><strong>EMI Paid Status: </strong> 9 of 24</p>
+                <p class="highlight"><strong>Current EMI / Pending EMI: </strong> 13 / <span class="danger">4</span></p>
+            </div>
+        </section>
+
+        <div class="emi-dropdown">
+            <button class="dropdown-toggle" onclick="toggleDropdown()">View Past EMI Payments</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <table class="emi-table">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Amount</th>
+                            <th>Fine</th>
+                            <th>Reference</th>
+                            <th>Status</th>
+                            <th>Paid Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jun 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹500</td>
+                            <td>E76449013</td>
+                            <td><span class="unsuccess">Pending</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>May 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449012</td>
+                            <td><span class="unsuccess">Pending</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Apr 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449011</td>
+                            <td><span class="unsuccess">Pending</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Mar 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449010</td>
+                            <td><span class="unsuccess">Pending</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Feb 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449009</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Jun' 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Jan 2025</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449008</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>May' 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Dec 2024</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449007</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Apr' 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 2024</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449006</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Mar' 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 2024</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449005</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Jan' 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Sep 2024</td>
+                            <td>₹5,276</td>
+                            <td>₹850</td>
+                            <td>E76449004</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Dec' 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Aug 2024</td>
+                            <td>₹5,276</td>
+                            <td>-</td>
+                            <td>E76449003</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Aug' 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Jul 2024</td>
+                            <td>₹5,276</td>
+                            <td>-</td>
+                            <td>E76449002</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Jul' 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Jun 2024</td>
+                            <td>₹5,276</td>
+                            <td>-</td>
+                            <td>E76449001</td>
+                            <td><span class="success">Paid</span></td>
+                            <td>Jun' 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="totalPaid" class="total-paid-display"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleDropdown() {
+            const content = document.getElementById('dropdownContent');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+
+            if (content.style.display === 'block') {
+                const rows = document.querySelectorAll('.emi-table tbody tr');
+
+                rows.forEach(row => {
+                    const amountText = row.cells[1].innerText.replace(/[₹,]/g, '').trim();
+                    const fineText = row.cells[2].innerText.replace(/[₹,]/g, '').trim();
+
+                    const amount = parseFloat(amountText) || 0;
+                    const fine = parseFloat(fineText) || 0;
+                    const total = amount + fine;
+
+                    const statusCell = row.cells[4];
+                    const isPaid = statusCell.innerText.toLowerCase().includes('paid');
+                    const totalColor = isPaid ? 'green' : 'black';
+
+                    // Get current status label (e.g., "Paid" or "Pending")
+                    const statusLabel = statusCell.querySelector('span').outerHTML;
+
+                    // Update status cell to include status + total
+                    statusCell.innerHTML = `
+          ${statusLabel}<br>
+          <span style="color:${totalColor}; font-weight:bold;">₹${total.toLocaleString()}</span>
+        `;
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
